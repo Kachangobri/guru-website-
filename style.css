@@ -8,11 +8,10 @@
 /* NAV-STYLING */
 .nav{
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     background-color: whitesmoke
     ;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     position: fixed;
@@ -21,11 +20,6 @@
     z-index: 100;
 }
 
-.nav .logo{
-    
-
-   
-}
 .nav .logo img{
     width: 8rem;
     height: 6rem;
@@ -47,11 +41,58 @@
 .navpages ul li a{
     text-decoration: none;
     color: #0C169D;
+    font-size: 20px;
+}
+
+.navpages a:hover{
+    color:  red;
+    transition: all 0.3s ease;
+}
+
+
+.callbtn{
+    color: white;
+    background-color: #0C169D;;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.callbtn:hover{
+    background-color: #2b34bc;
+    transition: all 0.3s ease;
+
+}
+
+.first__section{
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.text__container{
+    width: 50%;
+    font-size: 20px;
 }
 
 
 
-/* FIRST-SECTION STYLING */
+.text__container h1{
+    font-size: 4rem;
+}
+
+.img__container img{
+    width: 600px;
+    height: 500px;
+    border-radius: 20%;
+}
+
+
+/* FIRST-SECTION STYLING
 
 .first-section{
     height: 50%;
@@ -100,46 +141,46 @@
 }
 
 
-
+ */
 
 /* SECOND-SECTION STYLING */
 
 
 .second_section{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    background-color: #0C169D;
-    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url(images/DSC_1359.jpg   );
+    background-position: center;
+    background-size: cover;
+    /* opacity: -0; */
+    background-repeat: no-repeat;
 
     
 }
 
+.headER{
+    color: white;
+    font-size: 34px;
+}
 .second_section .intro_sec{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    width: 80%;
-    height: 100%;
+    margin-top: 10%;
+
    
 }
 .sub_one{
-    width: 40%;
-    height: 50%;
+ width: 300px;
+ background-color: white;
+ padding: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
+.sub_one img{
+    width: 100%;
+        
+}
 
 .section-three{
     display: flex;
@@ -209,10 +250,14 @@
 
 .footer{
     width: 100%;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: darkblue;
+    background-image: url(images/DSC_1362.jpg);
+    /* background-color: darkblue; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: azure;
     align-items: center;
     justify-content: center;
@@ -253,22 +298,6 @@
     background-color: aliceblue;
 }
 
-.form_section form input{
-    width: 50%;
-    height: 2rem;
-}
-
-.form_section form .inputclass{
-    height: 1.6rem;
-    border-radius: 0.6rem;
-    cursor: pointer;
-}
-
-.form_section form .inputclass:hover{
-    border: 0.1rem solid aliceblue;
-    color: aliceblue;
-    background-color: black;
-}
 
 @media screen and (max-width: 680px) {
     .footer{
@@ -337,4 +366,27 @@
     color: navy;
 }
 
+.form_section {
+    margin-top: 50px;
+}
 
+.form_section form input{
+    width: 300px;
+    padding:  10px 10px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+
+.form_section form textarea{
+    width: 310px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.inputclass{
+    text-align: center;
+    background-color: white;
+    padding: 10px 20px;
+}
